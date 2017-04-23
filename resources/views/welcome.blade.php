@@ -1,4 +1,4 @@
-@extends('app')
+@extends('app3')
     @section('header')
     <title>Laravel</title>
     @endsection
@@ -30,4 +30,4 @@
             </div>
         </div>
     </div>
-@section
+@endsection

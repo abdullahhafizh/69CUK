@@ -17,8 +17,12 @@
       <![endif]-->  
   </head>
   <body>
-  @include('navbar')
-  	@yield('content')
+  	<div class="container">
+  		<div class="row">
+  			@include('nav')
+  			@yield('content')
+  		</div>
+  	</div>
   </body>
   <script src="{{ asset('js/script.js') }}"></script>
   </html>

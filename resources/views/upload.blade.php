@@ -1,15 +1,15 @@
 @if (Auth::guest())
 <meta http-equiv="refresh" content="0; url=/entry" />
 @else
-@extends('app')
+@extends('app3')
 @section('header')
   <title>
    Upload 69CUK For Adult Only
  </title>
  @endsection
  @section('content')
-      <div class="container">
-        <div class="row">
+ <div class="container">
+ <div class="row">
           <legend><h1><b>Upload</b></h1></legend>
           <div class="col-md-12">
             <p></p>
@@ -48,5 +48,5 @@
           </div>    
         </div>
       </div>
-      @endif
       @endsection
+      @endif

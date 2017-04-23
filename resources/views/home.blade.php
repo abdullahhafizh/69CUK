@@ -1,38 +1,33 @@
 
-    @extends('app')
+@extends('app3')
 
-    @section('header')
-    <title>69CUK For Adult Only</title>
-    @endsection
-    @section('content')
-      @include('navbar')
-      <center>  
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-        <h1>HOME</h1>
-      </center>  
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+@section('header')
+<title>69CUK For Adult Only</title>
+@endsection
+@section('content')      
+<center>  
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+    <h1>qwretyuio</h1>
+</center>  
 
-    @endsection
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+@endsection
