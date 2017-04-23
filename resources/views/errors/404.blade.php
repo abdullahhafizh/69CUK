@@ -1913,10 +1913,10 @@
 		<div class='actions-404'>
 			<div class='ops-404'><span>Oops;</span> Sorry, but the page you were<p><br></p>trying to view does not exist.
 			</div><p><br></p>
-			<div class='title-404'>69</div><p><br></p>
+			<div class='title-404'>404</div><p><br></p>
 			<div class='link-404'>
 				<a href='/'><span class='glyphicon glyphicon-road'></span>
-					<trans>Back to JAV</trans></a>
+					<trans>Go Back</trans></a>
 				</div></div>
 			</div>
 			<style>.post-404{padding-top:40px;padding-bottom:60px;}.actions-404{width:100%;float:right;text-align:center;}.ops-404{width:50%;margin:0 auto;font-size:26px;font-weight:400;font-family:Oswald,sans-serif;letter-spacing:1.5px;}.ops-404 span{font-weight:700;}.title-404{font-size:200px;font-weight:700;line-height:1.1;color:$maincolor;}.link-404{font-size:18px;padding-top:20px;padding-bottom:50px;}#blog-pager,#sidebar-wrapper,.status-msg-wrap{display:none;}.status-msg-border{border:0!important;}.status-msg-bg{background-color:#fff;}#main-wrapper{float:none;width:100%;max-width:100%;}#headerleft{display:inline-block;float:none;}.headerleft-wrap{float:none;margin:0;padding:0;max-width:100%;display:block;text-align:center;}#header-wrapper img{height:70px;}.qitem{width:126px;height:126px;border:4px solid #222;margin:5px 5px 5px 0;background:url('bg.gif') no-repeat;overflow:hidden;position:relative;float:left;cursor:hand;cursor:pointer;}.qitem img{border:0;}.qitem .caption{position:absolute;z-index:0;color:#ccc;display:block;}.qitem .caption h4{font-size:12px;padding:10px 5px 0 8px;margin:0;color:#369ead;}.qitem .caption p{font-size:10px;padding:3px 5px 0 8px;margin:0;}.topLeft,.topRight,.bottomLeft,.bottomRight{position:absolute;background-repeat:no-repeat;z-index:200;}.topLeft{background-position:top left;}.topRight{background-position:top right;}.bottomLeft{background-position:bottom left;}.bottomRight{background-position:bottom right;}.clear{clear:both;}</style>

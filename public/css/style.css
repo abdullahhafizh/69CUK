@@ -1,3 +1,7 @@
+::selection {background:transparent; text-shadow:#000 0 0 2px;}
+		::-moz-selection {background:transparent; text-shadow:#000 0 0 2px;}
+		::-webkit-selection {background:transparent; text-shadow:#000 0 0 2px;}
+		::-o-selection {background:transparent; text-shadow:#000 0 0 2px;}
 html{
  	font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%
  }
