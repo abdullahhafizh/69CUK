@@ -88,6 +88,7 @@
                                 <div class="col-md-11" style="margin: 0 auto;">
                                     <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
+
                                     @if ($errors->has('email2'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email2') }}</strong>
@@ -103,6 +104,7 @@
                                     <div class="input-group">
                                         <input id="pwd0" type="password" class="form-control" name="password" required>
                                         <span class="input-group-btn">
+
                                             <a style="cursor: pointer; color: white;" class="btn btn-success" onclick="toggle_password('pwd0');" id="showhide">Show</a></span>
                                         </div>      
 
@@ -143,13 +145,13 @@
            document.getElementById('login').className = "btn btn-info disabled";
            document.getElementById('loginbtn').style.display = "block";
        }
-       function hideDiv() {
-           document.getElementById('welcomeDiv').style.display = "none";
-           document.getElementById('register').style.display = "block";
-           document.getElementById('login').className = "btn btn-info";
-           document.getElementById('loginbtn').style.display = "none";
-       }
-       function toggle_password(target){
+     function hideDiv() {
+         document.getElementById('welcomeDiv').style.display = "none";
+         document.getElementById('register').style.display = "block";
+         document.getElementById('login').className = "btn btn-info";
+         document.getElementById('loginbtn').style.display = "none";
+     }
+     function toggle_password(target){
         var d = document;
         var tag = d.getElementById(target);
         var tag2 = d.getElementById("showhide");

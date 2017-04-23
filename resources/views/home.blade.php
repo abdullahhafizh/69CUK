@@ -1,3 +1,4 @@
+
     @extends('app')
 
     @section('header')
@@ -33,4 +34,5 @@
       </center>  
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
     @endsection

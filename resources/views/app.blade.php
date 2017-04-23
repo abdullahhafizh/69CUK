@@ -17,6 +17,7 @@
       <![endif]-->  
   </head>
   <body>
+  @include('navbar')
   	@yield('content')
   </body>
   <script src="{{ asset('js/script.js') }}"></script>

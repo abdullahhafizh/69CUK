@@ -344,7 +344,7 @@ box-shadow: 0 8px 6px -6px #999;">
           <li><a href="/entry">Login</a></li>             
         </ul>
       </div>
-    </div><!--/.nav-collapse -->
+    </div>
   </div>
 </nav>
 </div>
