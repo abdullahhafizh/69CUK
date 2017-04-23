@@ -1,4 +1,5 @@
 <?php
+Auth::routes();
 
 Route::get('/', function () {
     return view('home');
@@ -18,7 +19,7 @@ Route::get('/entry',function () {
     return view('auth/login');
 });
 
-Auth::routes();
+
 
 Route::get('home', 'HomeController@index');
 
