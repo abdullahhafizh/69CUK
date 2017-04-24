@@ -9,8 +9,19 @@ use Auth;
 
 class UploadController extends Controller
 {
+
+  public function __construct()
+  {
+    $this->middleware('auth');
+  }
+  public function index()
+  {
+    return view('upload');
+  }
+
   public function save()
   {
+    $this->middleware('auth');
     $a = new \App\Artikel;
     $a->slug = str_slug(Input::get('id'));
     $a->judul = Input::get('judul');

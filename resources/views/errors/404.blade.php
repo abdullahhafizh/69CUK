@@ -33,6 +33,12 @@
 		::-moz-selection {background:transparent; text-shadow:#000 0 0 2px;}
 		::-webkit-selection {background:transparent; text-shadow:#000 0 0 2px;}
 		::-o-selection {background:transparent; text-shadow:#000 0 0 2px;}
+		a, u {
+			text-decoration: none;
+		}
+		a {
+			text-decoration: none !important;
+		}		
 		a img{	border: none;}
 		ol, ul { padding:0;  margin:0;  text-align: left;  }
 		ol li { list-style-type: decimal;  padding:0 0 5px;  }

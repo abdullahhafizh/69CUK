@@ -1,9 +1,7 @@
 <?php
 Auth::routes();
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','HomeController@index');
 
 Route::get('legendary', function () {
     return view('legendary');
@@ -34,9 +32,7 @@ Route::get('/of-{id}', 'UserPageController@show');
 //     // 'user '.$id;
 // });
 
-Route::get('upload',function () {
-    return view('upload');
-});
+Route::get('upload', 'UploadController@index');
 // Route::get('upload', function () {
 //     return view('upload');
 // })->middleware('auth');

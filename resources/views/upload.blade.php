@@ -1,6 +1,4 @@
-@if (Auth::guest())
-<meta http-equiv="refresh" content="0; url=/entry" />
-@else
+
 @extends('app3')
 @section('header')
   <title>
@@ -48,5 +46,4 @@
           </div>    
         </div>
       </div>
-      @endsection
-      @endif
+      @endsection      
