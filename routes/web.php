@@ -2,6 +2,18 @@
 Auth::routes();
 
 Route::get('/','HomeController@index');
+Route::get('/images/{filename}', function ($filename)
+{
+	$path = storage_path('sampul') . '/' . $filename;
+
+	$file = File::get($path);
+	$type = File::mimeType($path);
+
+	$response = Response::make($file);
+	$response->header("Content-Type", $type);
+
+	return $response;
+});
 
 Route::get('legendary', function () {
     return view('legendary');
@@ -14,13 +26,11 @@ Route::get('post-{id}', function () {
 Route::get('shuffle', 'HomeController@acak');
 
 Route::get('/logout', 'Auth\LoginController@logout');
+Route::post('/search', 'HomeController@search');
 
 Route::get('/entry',function () {
     return view('auth/login');
 });
-
-
-
 Route::get('home', 'HomeController@index');
 
 Route::get('hp',function () {
