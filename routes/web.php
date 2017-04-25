@@ -7,9 +7,11 @@ Route::get('legendary', function () {
     return view('legendary');
 });
 
-Route::get('shuffle', function () {
-    return view('shuffle');
+Route::get('post-{id}', function () {
+    return view('post');
 });
+
+Route::get('shuffle', 'HomeController@acak');
 
 Route::get('/logout', 'Auth\LoginController@logout');
 

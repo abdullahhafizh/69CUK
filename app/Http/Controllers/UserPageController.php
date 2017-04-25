@@ -15,10 +15,10 @@ class UserPageController extends Controller
 
     public function show($id)
     {
-        $data['users'] = \App\User::find($id);
-        if (!$data['users']){ abort(404); }    
-        return view('user')->with($data);
-    	// return view('user', ['blog' => $id]);
+        // $data['users'] = \App\User::find($id);
+        // if (!$data['users']){ abort(404); }    
+        // return view('user')->with($data);
+    	return view('user', ['blog' => $id]);
     }
 
     public function viewProfile($id = null) {

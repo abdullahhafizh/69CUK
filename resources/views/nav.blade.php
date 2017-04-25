@@ -39,34 +39,32 @@ box-shadow: 0 8px 6px -6px #999;">
       <li role="presentation">
         <a href="/upload">                   
           <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Upload</a></li>
-          <li class="dropdown">                       
-            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{{ Auth::user()->name }}}&nbsp;<span class="caret"></span></a>
-            <ul class="dropdown-menu" id="dropdown-menu">
-              <li class="dropdown-header"><div style="text-align: center;">69CUK&nbsp;</div></li>
-              <li><a href="#">Rules<span class="glyphicon glyphicon-check pull-right"></span></a></li>
-              <li><a href="#">Top Users<span class="glyphicon glyphicon-star pull-right"></span></a></li>    
-              <li class="divider"></li>                         
-              <li><a href="#">My Posts<span class="glyphicon glyphicon-level-up pull-right"></span></a></li>
-              <li><a href="#">Profile Setting<span class="glyphicon glyphicon-cog pull-right"></span></a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="/logout">Sign Out<span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
-            </ul>
-          </li>                
-          <li role="presentation"><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>                 
+          <li role="presentation" id="akun" class="active">                       
+            <a href="#"><span class="glyphicon glyphicon-user"></span> {{{ Auth::user()->name }}}</a>            
+          </li>                          
+          <li onmouseover="muncul()" onmouseleave="hilang()" id="keluar" role="presentation"><a href="/logout">Sign Out&nbsp;&nbsp;<span id="logokeluar" style="display: none;" class="glyphicon glyphicon-log-out pull-right"></span></a></li>
         </div>        
-      </div><!--/.nav-collapse -->
+      </div>
     </div>
   </nav>
-</div>    
-</div><!--/.nav-collapse -->
-</nav>
-@else
-<!-- <div class="hidden-xs hidden-sm"> -->
-<!-- Fixed navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top" style="-webkit-box-shadow: 0 8px 6px -6px #999;
--moz-box-shadow: 0 8px 6px -6px #999;
-box-shadow: 0 8px 6px -6px #999;">
-<div class="container">
+  <script type="text/javascript">
+   function muncul() {
+     document.getElementById('logokeluar').style.display = "inline";
+     document.getElementById('akun').className = "";
+     document.getElementById('keluar').className = "active";
+   };
+   function hilang() {
+     document.getElementById('logokeluar').style.display = "none";
+     document.getElementById('akun').className = "active";
+     document.getElementById('keluar').className = "";
+   };
+ </script>
+ @else
+ <!-- Fixed navbar -->
+ <nav class="navbar navbar-inverse navbar-fixed-top" style="-webkit-box-shadow: 0 8px 6px -6px #999;
+ -moz-box-shadow: 0 8px 6px -6px #999;
+ box-shadow: 0 8px 6px -6px #999;">
+ <div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
       <span class="sr-only">Toggle navigation</span>
@@ -103,11 +101,7 @@ box-shadow: 0 8px 6px -6px #999;">
           <li><a href="/entry">Login</a></li>             
         </ul>
       </div>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
-</div>
-</div><!--/.nav-collapse -->
-</div>
-</nav>
+    </div>
+  </div>      
+</nav>        
 @endif

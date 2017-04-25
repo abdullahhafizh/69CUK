@@ -13,7 +13,7 @@
          <img src="http://cdn20.1cak.com/posts/e2665f8234b7cd6f1df1d39b15a243df_t.jpg" title="">
          <div style="background:#fff;height:23px;position:absolute;margin-top:-23px;z-index:88;width:652px"></div>
          <div style="text-align:left;padding-left:20px;padding-top:10px">
-           <h3>Judul</h3>
+           <h3>{{$judul}}</h3>
            <div class="">
              <a href="" style="display: inline; background: none">User</a>
              <abbr title="">an hour ago</abbr>

@@ -20,4 +20,12 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function acak()
+    {
+        $collection = collect([1, 2, 3, 4, 5]);
+        $id = $collection->shuffle();
+        $id->all();        
+        return redirect(url('/post{$id}'));
+    }
 }

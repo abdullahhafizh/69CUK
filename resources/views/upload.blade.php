@@ -1,4 +1,3 @@
-
 @extends('app3')
 @section('header')
   <title>
@@ -6,8 +5,6 @@
  </title>
  @endsection
  @section('content')
- <div class="container">
- <div class="row">
           <legend><h1><b>Upload</b></h1></legend>
           <div class="col-md-12">
             <p></p>
@@ -43,7 +40,5 @@
               
             </form>
             <div class="col-sm-2"></div>
-          </div>    
-        </div>
-      </div>
+          </div>        
       @endsection      
