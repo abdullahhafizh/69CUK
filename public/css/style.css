@@ -3,12 +3,12 @@
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
- @font-face{
- 	font-family: 
- 	src: local('FontAwesome'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff');
- }
+ ::selection {background:transparent; text-shadow:#000 0 0 2px;}
+ ::-moz-selection {background:transparent; text-shadow:#000 0 0 2px;}
+ ::-webkit-selection {background:transparent; text-shadow:#000 0 0 2px;}
+ ::-o-selection {background:transparent; text-shadow:#000 0 0 2px;}
  html{
- 	font-family: FontAwesome;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%
+ 	-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%
  }
  a, u {
  	text-decoration: none;

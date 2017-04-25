@@ -13,9 +13,9 @@
     <table width="100%">
         <tbody>
             <tr>
-                <td style="overflow-x:hidden" width="472" align="center">
+                <td style="overflow-x:hidden;" align="center">
                     <!-- <div class="col-md-12 image" style="width: 50%;"> -->
-                    <img src="{{ url('images/'.$data->sampul) }}">
+                    <img src="{{ url('images/'.$data->sampul) }}" width="472" max-width="472">
                     <!-- </div>  -->
                 </td>
                 <td valign="top">

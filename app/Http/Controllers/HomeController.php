@@ -19,7 +19,7 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $data['artikel'] = \App\Artikel::paginate(0);
+        $data['artikel'] = \App\Artikel::orderBy('created_at', 'desc')->get();
         $data['user'] = \App\User::paginate(0);
         return view('home')->with($data);
     }
