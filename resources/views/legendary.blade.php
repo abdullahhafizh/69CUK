@@ -6,7 +6,6 @@
 @endsection
 @section('content')
 
-
 <div style="border-bottom:1px solid #eee;padding-bottom:10px;padding-top:10px">
  <table width="100%" border="0">
    <tbody>

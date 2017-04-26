@@ -14,7 +14,6 @@ Route::get('/images/{filename}', function ($filename)
 
 	return $response;
 });
-
 // Route::get('legendary', function () {
 //     return view('legendary');
 // });

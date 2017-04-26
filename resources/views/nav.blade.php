@@ -3,6 +3,7 @@
     padding-top: 70px;
   }
 </style>
+
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 @if (Auth::check())
 <!-- Fixed navbar -->
