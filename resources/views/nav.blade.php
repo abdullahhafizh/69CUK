@@ -3,7 +3,6 @@
     padding-top: 70px;
   }
 </style>
-
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 @if (Auth::check())
 <!-- Fixed navbar -->
@@ -30,7 +29,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
       </li>
     </ul>
     <form method="post" action="{{ url('search' )}}" class="navbar-form navbar-left">
-      <div class="input-group" style="font-family: 'Oswald', sans-serif;">
+      <div class="input-group">
         <input type="text" name="q" class="form-control" placeholder="Search for..." style="width: 232px;">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <span class="input-group-btn">
@@ -78,7 +77,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
     </ul>
     <div class="nav navbar-nav navbar-right">
       <form method="post" action="{{ url('search' )}}" class="navbar-form navbar-left">
-        <div class="input-group" style="font-family: 'Oswald', sans-serif; width: 100%;">
+        <div class="input-group" style=" width: 100%;">
           <input type="text" name="q" class="form-control" placeholder="Search for..." style="width: 180px;">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <span class="input-group-btn">

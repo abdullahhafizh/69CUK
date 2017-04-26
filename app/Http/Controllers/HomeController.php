@@ -9,13 +9,14 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-
+    /*    
      * @return \Illuminate\Http\Response
-     */
+     */    
+
     public function index(){
-        $data['artikel'] = \App\Artikel::orderBy('created_at', 'desc')->get();
-        $data['user'] = \App\User::find(Auth::user()->id);
-        return view('home')->with($data);
+        $data['artikel'] = \App\Artikel::orderBy('created_at', 'desc')->paginate(6);
+        // $data['user'] = \App\User::find(Auth::user()->id);
+        return view('home')->with($data);        
     }
 
     public function detail($id){
