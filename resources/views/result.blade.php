@@ -21,7 +21,7 @@
           <td valign="top">
             <b><a href="{{url('/kocak-'.$data->id)}}" style="color: black;"><h3>{{ $data->judul }}</h3></a></b>
             <div class="">
-              <a style="display: inline; color: black;" href=""><b>{{ $data->id_user }}</b></a>&nbsp;<abbr>{{ $data->created_at->diffForHumans() }}</abbr>
+              <a style="display: inline; color: black;" href=""><b>{{ $data->user }}</b></a>&nbsp;<abbr>{{ $data->created_at->diffForHumans() }}</abbr>
             </div>
             <div class="">
               from {{ $data->isi }}

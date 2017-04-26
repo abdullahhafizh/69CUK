@@ -16,7 +16,7 @@
          <div style="text-align:left;padding-left:20px;padding-top:10px">
               <h3>{{ $artikel->judul }}</h3>
            <div class="">
-             <a href="" style="display: inline; background: none">{{ $artikel->id_user }}</a>
+             <a href="" style="display: inline; background: none">{{ $artikel->user }}</a>
              <abbr>{{ $artikel->created_at->diffForHumans() }}</abbr>
            </div>
            <div style="margin-top:5px;" class="">

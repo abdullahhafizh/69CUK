@@ -27,7 +27,7 @@ class UploadController extends Controller
     $a->slug = str_slug(Input::get('id'));
     $a->judul = Input::get('judul');
     $a->isi = Input::get('isi');
-    $a->id_user = Auth::user()->id;
+    $a->user = Auth::user()->name;
     $a->sampul = '';
     if(Input::hasFile('sampul')){
       $sampul = date('YmdHis').uniqid().".".
