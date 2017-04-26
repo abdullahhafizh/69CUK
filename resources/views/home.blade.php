@@ -13,6 +13,7 @@
     <table width="100%">
         <tbody>
             <tr>
+            <div class="row">
                 <td style="overflow-x:hidden;" align="center">
                     <!-- <div class="col-md-12 image" style="width: 50%;"> -->
                     <img src="{{ url('images/'.$data->sampul) }}" width="472" max-width="472">
@@ -39,6 +40,7 @@
                 <span>0 komentar</span>
             </div>
         </td>
+        </div>
     </tr>
 </tbody>
 </table>
@@ -47,5 +49,4 @@
 <div style="text-align: right; padding: 10px;">
     <a href="" class="btn btn-default" style="display:block;color:#aaa;font-size:14px;text-align:center;padding-top:10px">Lanjut lagi</a>
 </div>
-
 @endsection
