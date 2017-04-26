@@ -22,6 +22,8 @@ class CreateArtikelsTable extends Migration
             $table->text('isi');
             $table->timestamps();
         });
+        $statement = "ALTER TABLE artikels AUTO_INCREMENT = 2000000001;";
+        DB::unprepared($statement);
     }
 
     /**

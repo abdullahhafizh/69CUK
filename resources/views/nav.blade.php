@@ -30,7 +30,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
     </ul>
     <form class="navbar-form navbar-left">           
       <div class="input-group" style="font-family: 'Oswald', sans-serif;">
-        <input type="text" class="form-control" placeholder="Search for...">
+        <input type="text" class="form-control" placeholder="Search for..." style="width: 232px;">
         <span class="input-group-btn">         
           <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>       
         </span>      
@@ -77,7 +77,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
     <div class="nav navbar-nav navbar-right">                   
       <form class="navbar-form navbar-left">           
         <div class="input-group" style="font-family: 'Oswald', sans-serif; width: 100%;">
-          <input type="text" class="form-control" placeholder="Search for...">
+          <input type="text" class="form-control" placeholder="Search for..." style="width: 180px;">
           <span class="input-group-btn">         
             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>       
           </span>      
