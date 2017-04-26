@@ -5,15 +5,17 @@
 </title>
 @endsection
 @section('content')
+
+
 <div style="border-bottom:1px solid #eee;padding-bottom:10px;padding-top:10px">
  <table width="100%" border="0">
    <tbody>
      <tr>
        <td width="100%" align="center">
-         <img src="http://cdn20.1cak.com/posts/e2665f8234b7cd6f1df1d39b15a243df_t.jpg" title="">
+         <img src="{{ url('images/'.$artikel->sampul) }}" title="">
          <div style="background:#fff;height:23px;position:absolute;margin-top:-23px;z-index:88;width:652px"></div>
          <div style="text-align:left;padding-left:20px;padding-top:10px">
-           <h3>Judul</h3>
+              <h3>{{ $artikel->judul }}</h3>
            <div class="">
              <a href="" style="display: inline; background: none">User</a>
              <abbr title="">an hour ago</abbr>
@@ -30,6 +32,7 @@
    </tbody>
  </table>
 </div>
+
 <div style="">
   <div style="text-align:left;border-top:1px solid #ddd;font-size:13px;word-wrap:break-word">
     <div style="margin:5px">
@@ -41,4 +44,4 @@
     </div>
   </div>
 </div>
-@endsection     
+@endsection

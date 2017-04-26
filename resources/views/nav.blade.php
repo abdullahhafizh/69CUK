@@ -18,7 +18,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
       <span class="icon-bar"></span>
     </button>
     <a id="69" class="navbar-brand" href="/" style="background:transparent; text-shadow:#fff 0 0 2px; font-family:'Merriweather', serif;">69</a>
-  </div>        
+  </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-left">
       <li class="{{ Request::segment(1) === 'legendary' ? 'active' : null }}">
@@ -26,25 +26,26 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
       </li>
       <li class="{{ Request::segment(1) === 'shuffle' ? 'active' : null }}">
         <a href="{{ url('shuffle' )}}" ></i>Shuffle</a>
-      </li>                    
+      </li>
     </ul>
-    <form class="navbar-form navbar-left">           
+    <form method="post" action="{{ url('search' )}}" class="navbar-form navbar-left">
       <div class="input-group" style="font-family: 'Oswald', sans-serif;">
-        <input type="text" class="form-control" placeholder="Search for...">
-        <span class="input-group-btn">         
-          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>       
-        </span>      
+        <input type="text" name="q" class="form-control" placeholder="Search for...">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </span>
       </div><!-- /input-group -->
-    </form>   
-    <div class="nav navbar-nav navbar-right">                
+    </form>
+    <div class="nav navbar-nav navbar-right">
       <li role="presentation">
-        <a href="/upload">                   
+        <a href="/upload">
           <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Upload</a></li>
           <li role="presentation" style="background: #444;">
-            <a href="#"><span class="glyphicon glyphicon-user"></span> {{{ Auth::user()->name }}}</a>            
-          </li>                          
+            <a href="#"><span class="glyphicon glyphicon-user"></span> {{{ Auth::user()->name }}}</a>
+          </li>
           <li role="presentation"><a href="/logout">Sign Out&nbsp;&nbsp;<span></span><span id="logokeluar" class="glyphicon glyphicon-log-out pull-right"></span></a></li>
-        </div>        
+        </div>
       </div>
     </div>
   </nav>
@@ -62,7 +63,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
         <span class="icon-bar"></span>
       </button>
       <a id="69" class="navbar-brand" href="/" style="background:transparent; text-shadow:#fff 0 0 2px; font-family:'Merriweather', serif;">69</a>
-    </div>        
+    </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-left">
@@ -72,25 +73,26 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
       </li>
       <li class="{{ Request::segment(1) === 'shuffle' ? 'active' : null }}">
         <a href="{{ url('shuffle' )}}"></i>Shuffle</a>
-      </li>                             
-    </ul>          
-    <div class="nav navbar-nav navbar-right">                   
-      <form class="navbar-form navbar-left">           
+      </li>
+    </ul>
+    <div class="nav navbar-nav navbar-right">
+      <form method="post" action="{{ url('search' )}}" class="navbar-form navbar-left">
         <div class="input-group" style="font-family: 'Oswald', sans-serif; width: 100%;">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">         
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>       
-          </span>      
+          <input type="text" name="q" class="form-control" placeholder="Search for...">
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          </span>
         </div><!-- /input-group -->
       </form>
       <li role="presentation">
-        <a href="/upload">                   
-          <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Upload</a></li>    
+        <a href="/upload">
+          <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Upload</a></li>
           <ul class="nav navbar-nav navbar-right">
-            <li class="btn-warning"><a href="/entry"><font color="white">Login</font></a></li>             
+            <li class="btn-warning"><a href="/entry"><font color="white">Login</font></a></li>
           </ul>
         </div>
       </div>
-    </div>      
+    </div>
   </nav>
   @endif

@@ -15,13 +15,11 @@ Route::get('/images/{filename}', function ($filename)
 	return $response;
 });
 
-Route::get('legendary', function () {
-    return view('legendary');
-});
+// Route::get('legendary', function () {
+//     return view('legendary');
+// });
 
-Route::get('post-{id}', function () {
-    return view('post');
-});
+Route::get('kocak-{id}', 'HomeController@detail');
 
 Route::get('shuffle', 'HomeController@acak');
 

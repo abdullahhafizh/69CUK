@@ -20,9 +20,12 @@
                     <!-- </div>  -->
                 </td>
                 <td valign="top">
-                    <b><a href="/" style="color: black;"><h3>{{ $data->judul }}</h3></a></b>
+                    <b><a href="{{url('/kocak-'.$data->id)}}" style="color: black;"><h3>{{ $data->judul }}</h3></a></b>
                     <div class="">
-                        <a style="display: inline; color: black;" href=""><b>User</b></a>&nbsp;<abbr>{{ $data->created_at }}</abbr>
+
+                        <a style="display: inline; color: black;" href=""><b>{{ $data->id_user }}</b></a>&nbsp;
+
+                        <abbr>{{ $data->created_at }}</abbr>
                     </div>
                     <div class="">
                         from {{ $data->isi }}
