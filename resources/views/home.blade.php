@@ -9,15 +9,15 @@
 @section('content')
 
 @foreach($artikel as $data)
-<div style="border-bottom:1px solid #ccc;padding-bottom:10px;padding-top:10px">
-    <table width="100%">
+<div style="border-bottom:1px solid #ccc;padding-bottom:10px;padding-top:10px;">
+    <table>
         <tbody>
             <tr>
             <div class="row">
-                <td style="overflow-x:hidden;" align="center">
-                    <!-- <div class="col-md-12 image" style="width: 50%;"> -->
+                <td style="overflow-x:hidden;">
+                    <div class="col-md-12 image" style="width: 50%;">
                     <img src="{{ url('images/'.$data->sampul) }}" width="472" max-width="472">
-                    <!-- </div>  -->
+                    </div>
                 </td>
                 <td valign="top">
                     <b><a href="{{url('/kocak-'.$data->id)}}" style="color: black;"><h3>{{ $data->judul }}</h3></a></b>
@@ -49,7 +49,12 @@
 </table>
 </div>
   @endforeach
+
+  @if(sizeof($artikel) == 0)
+  @else
 <div style="text-align: right; padding: 10px;">
-    <a href="" class="btn btn-default" style="display:block;color:#aaa;font-size:14px;text-align:center;padding-top:10px">Lanjut lagi</a>
+    <a href="" class="btn navbar-inverse" style="display:block;color:#aaa;font-size:14px;text-align:center;padding-top:10px">Lanjut lagi</a>
 </div>
+@endsection
+@endif
 @endsection

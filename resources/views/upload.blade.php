@@ -22,7 +22,7 @@
     <div class="form-group">
       <label class="control-label col-sm-1" for="judul">Judul</label>
       <div class="col-sm-10">
-        <input id="judul" type="text" class="validate" name="judul" style="width: 100%;" required>
+        <input id="judul" type="text" class="form-control" name="judul" style="width: 100%;" required>
         <label for="judul"><span><small><font color="#aaa">Deskripsi gambar</font></small></span></label>
       </div>        
     </div>
@@ -30,7 +30,7 @@
     <div class="form-group">
       <label class="control-label col-sm-1" for="isi">Sumber</label>
       <div class="col-sm-10">
-      <input id="isi" type="text" class="validate" name="isi" style="width: 100%;" required>
+      <input id="isi" type="text" class="form-control" name="isi" style="width: 100%;" required>
       <label for="judul"><font color="#aaa"><span>(Recomended)<small> Hormati dan Hargai Pemilik Aslinya</small></span></font></label>
       </div>        
     </div>
