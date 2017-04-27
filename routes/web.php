@@ -19,9 +19,8 @@ Route::get('/images/{filename}', function ($filename)
 // });
 
 Route::get('kocak-{id}', 'HomeController@detail');
-
-Route::get('shuffle', 'HomeController@acak');
-
+Route::get('shuffle', 'HomeController@getRandomPost');
+Route::get('shuffle/{id}', 'HomeController@show')->name('random');
 Route::get('/logout', 'Auth\LoginController@logout');
 Route::post('/search', 'HomeController@search');
 
