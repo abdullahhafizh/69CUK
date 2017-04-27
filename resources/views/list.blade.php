@@ -40,7 +40,7 @@
         @foreach($artikel as $key)
             <tr>
             <td>{{$key->judul}}</td>
-            <td><img src="{{ url('images/'.$key->sampul) }}" style="width: 50px; height: 10px;"></td>
+            <td><img src="{{ url('images/'.$key->sampul) }}" style="width: 50px; height: auto;"></td>
             <td>{{$key->isi}}</td>
             <td>{{$key->created_at}}</td>
             <td>{{$key->user}}</td>
