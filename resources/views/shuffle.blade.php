@@ -1,7 +1,7 @@
 @extends('app3')
 @section('header')
 <title>
-{{ $post->judul }} - 69CUK For Adult Only
+  {{ $post->judul }} - 69CUK For Adult Only
 </title>
 @endsection
 @section('content')
@@ -14,20 +14,20 @@
          <img src="{{ url('images/'.$post->sampul) }}" title="" style="width: 472px;">
          <div style="background:#fff;height:23px;position:absolute;margin-top:-23px;z-index:88;width:652px"></div>
          <div style="text-align:left;padding-left:20px;padding-top:10px">
-              <h3>{{ $post->judul }}</h3>
-           <div class="">
-             <a href="" style="display: inline; background: none">{{ $post->user }}</a>
-             <abbr>{{ $post->created_at->diffForHumans() }}</abbr>
-           </div>
-           <div style="margin-top:5px;" class="">
-             <span id="">0</span>
-             <span>hahaha</span>
-           </div>
+          <h3>{{ $post->judul }}</h3>
+          <div class="">
+           <a href="" style="display: inline; background: none">{{ $post->user }}</a>
+           <abbr>{{ $post->created_at->diffForHumans() }}</abbr>
          </div>
-       </td>
-     </tr>
-   </tbody>
- </table>
+         <div style="margin-top:5px;" class="">
+           <span id="">0</span>
+           <span>hahaha</span>
+         </div>
+       </div>
+     </td>
+   </tr>
+ </tbody>
+</table>
 </div>
 
 <div style="" id="komentar">
@@ -48,4 +48,11 @@
     </div>
   </div>
 </div>
-@endsection
+<footer class="navbar-fixed-bottom">
+  <div class="container-fluid">
+    <small class="blur">
+      <span class="text-muted pull-left" style="cursor: default;">Created by <a href="https://github.com/Hi-Fiez" target="_blank">Hi-Fiez</a> & <a href="https://github.com/andynl" target="_blank">andynl</a></span>
+      <span class="text-muted pull-right">Designed by <a href="https://facebook.com/abdlahafizh">Abdullah Hafizh</a></span>    </small>
+    </div>
+  </footer>
+  @endsection

@@ -3,18 +3,6 @@
 <head> 
   @yield('header')  
   <style type="text/css"> 
-    .footer {
-      position: absolute;
-      bottom: 0;
-      width: 750px;
-      /* Set the fixed height of the footer here */
-      height: 60px;
-      background-color: #f5f5f5;
-    }
-
-    .container .text-muted {
-      margin: 20px 0;
-    }
   </style>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,13 +50,6 @@
           </div>
         </div>
       </div>
-    </body>
-    <footer class="navbar-fixed-bottom">
-      <div class="container-fluid">
-        <small class="blur">
-          <span class="text-muted pull-left" style="cursor: default;">Created by <a href="https://github.com/Hi-Fiez" target="_blank">Hi-Fiez</a> & <a href="https://github.com/andynl" target="_blank">andynl</a></span>
-          <span class="text-muted pull-right">Designed by <a href="https://facebook.com/abdlahafizh">Abdullah Hafizh</a></span>    </small>
-        </div>
-      </footer>
+    </body>    
       <script src="{{ asset('js/script.js') }}"></script>  
       </html>

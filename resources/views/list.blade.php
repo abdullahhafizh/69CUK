@@ -2,7 +2,6 @@
 
 @section('header')
 <title>69CUK For Adult Only</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 <style type="text/css">
   .blur{
     color: #aaa;}    
@@ -97,4 +96,11 @@
     <a href="{{$artikel->nextPageUrl()}}" class="btn navbar-inverse" style="display:block;color:#aaa;font-size:14px;text-align:center;padding-top:10px">Lanjut lagi</a>
 </div>
 @endif
+<footer class="navbar-fixed-bottom">
+  <div class="container-fluid">
+    <small class="blur">
+        <span class="text-muted pull-left" style="cursor: default;">Created by <a href="https://github.com/Hi-Fiez" target="_blank">Hi-Fiez</a> & <a href="https://github.com/arm02" target="_blank">arm02</a></span>
+        <span class="text-muted pull-right">Designed by <a href="https://facebook.com/abdlahafizh">Abdullah Hafizh</a></span>    </small>
+    </div>
+</footer>
 @endsection
