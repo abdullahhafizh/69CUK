@@ -22,7 +22,7 @@ class UploadController extends Controller
 
   public function list()
   {
-    $data['artikel'] = \App\Artikel::where('user',Auth::user()->name)->paginate(1000);
+    $data['artikel'] = \App\Artikel::where('user',Auth::user()->name)->orderBy('created_at', 'desc')->get();
     return view('list')->with($data);
   }
 
