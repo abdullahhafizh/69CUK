@@ -19,7 +19,7 @@ Route::get('/images/{filename}', function ($filename)
 // });
 
 Route::get('kocak-{id}', 'HomeController@detail');
-
+Route::get('/list','UploadController@list');
 Route::get('shuffle', 'HomeController@acak');
 
 Route::get('/logout', 'Auth\LoginController@logout');

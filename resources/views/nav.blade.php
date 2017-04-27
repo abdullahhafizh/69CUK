@@ -42,7 +42,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
         <a href="/upload">
           <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Upload</a></li>
           <li role="presentation" style="background: #444;">
-            <a href="#"><span class="glyphicon glyphicon-user"></span> {{{ Auth::user()->name }}}</a>
+            <a href="/list"><span class="glyphicon glyphicon-user"></span> {{{ Auth::user()->name }}}</a>
           </li>
           <li role="presentation"><a href="/logout">Sign Out&nbsp;&nbsp;<span></span><span id="logokeluar" class="glyphicon glyphicon-log-out pull-right"></span></a></li>
         </div>

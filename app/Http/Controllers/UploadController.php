@@ -20,6 +20,12 @@ class UploadController extends Controller
     return view('upload');
   }
 
+  public function list()
+  {
+    $data['artikel'] = \App\Artikel::where('user',Auth::user()->name)->paginate(1000);
+    return view('list')->with($data);
+  }
+
   public function save()
   {
     $this->middleware('auth');
