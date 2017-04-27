@@ -18,6 +18,15 @@ class HomeController extends Controller
         // $data['user'] = \App\User::find(Auth::user()->id);
         return view('home')->with($data);        
     }
+     public function getRandomPost() {
+        $post = Artikel::inRandomOrder()->first();
+        return redirect()->route('random', ["id" => $post->id]);
+    }
+
+    public function show($id) {
+        $post = Artikel::findOrFail($id);
+        return view('shuffle', compact('post'));
+    }
 
     public function detail($id){
         $data['artikel'] = \App\Artikel::find($id);
@@ -32,11 +41,4 @@ class HomeController extends Controller
       return view('home', compact('hasil', 'search'));
     }
 
-    public function acak()
-    {
-        $collection = collect([1, 2, 3, 4, 5]);
-        $id = $collection->shuffle();
-        $id->all();
-        return redirect(url('/post{$id}'));
-    }
 }
