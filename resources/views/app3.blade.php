@@ -40,17 +40,17 @@
             <div class="col-sm-5 col-md-4"> 
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
                 <center>              
-                  <img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png">
+                  <a href="/password" target="blank"><img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png"></a>
                 </center>
               </div>
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
                 <center>              
-                  <img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png">
+                  <a href="/password" target="blank"><img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png"></a>
                 </center>
               </div>
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
                 <center>              
-                  <img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png">
+                  <a href="/password" target="blank"><img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png"></a>
                 </center>
               </div>              
             </div>  

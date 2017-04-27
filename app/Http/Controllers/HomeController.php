@@ -12,25 +12,28 @@ class HomeController extends Controller
     /*    
      * @return \Illuminate\Http\Response
      */    
+    public function home(){
+      return redirect(url('/'));
+    }
 
     public function index(){
-        $data['artikel'] = \App\Artikel::orderBy('created_at', 'desc')->paginate(6);
+      $data['artikel'] = \App\Artikel::orderBy('created_at', 'desc')->paginate(6);
         // $data['user'] = \App\User::find(Auth::user()->id);
-        return view('home')->with($data);        
+      return view('home')->with($data);        
     }
-     public function getRandomPost() {
-        $post = Artikel::inRandomOrder()->first();
-        return redirect()->route('random', ["id" => $post->id]);
+    public function getRandomPost() {
+      $post = Artikel::inRandomOrder()->first();
+      return redirect()->route('random', ["id" => $post->id]);
     }
 
     public function show($id) {
-        $post = Artikel::findOrFail($id);
-        return view('shuffle', compact('post'));
+      $post = Artikel::findOrFail($id);
+      return view('shuffle', compact('post'));
     }
 
     public function detail($id){
-        $data['artikel'] = \App\Artikel::find($id);
-        return view('legendary')->with($data);
+      $data['artikel'] = \App\Artikel::find($id);
+      return view('legendary')->with($data);
     }
 
     public function search(Request $request){
@@ -41,4 +44,4 @@ class HomeController extends Controller
       return view('home', compact('hasil', 'search'));
     }
 
-}
+  }

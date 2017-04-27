@@ -25,7 +25,7 @@
           <div class="row">
             <td style="overflow-x:hidden;">
               <div class="col-md-12 image" style="width: 50%;">
-                <img src="{{ url('images/'.$data->sampul) }}" width="472" max-width="472">
+                <a href="{{url('/kocak-'.$data->id)}}" title="{{ $data->judul }}"><img src="{{ url('images/'.$data->sampul) }}" width="472" max-width="472"></a>
             </div>
         </td>                    
         <td valign="top" style="display: block; width: 245px; font-family: FontAwesome;">

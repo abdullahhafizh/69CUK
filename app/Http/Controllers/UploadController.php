@@ -30,7 +30,7 @@ class UploadController extends Controller
   {
     $this->middleware('auth');
     $a = new \App\Artikel;
-    $a->slug = str_slug(Input::get('id'));
+    // $a->slug = str_slug(Input::get('id'));
     $a->judul = Input::get('judul');
     $a->isi = Input::get('isi');
     $a->user = Auth::user()->name;
