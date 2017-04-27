@@ -49,6 +49,30 @@
             }(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/#{{$artikel->id}}" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
           </div>
+          <div class="pull-right" style="margin-top: 5px;" id="share-buttons">        
+            <!-- Facebook -->
+            <a href="http://www.facebook.com/sharer.php?u=http://www.hi-fiez.cf" target="_blank facebook">
+              <img src="/images/facebook.png" alt="Facebook" />
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/share?url={{url('/kocak-'.$artikel->id)}}&amp;text=Coba lihat!!, ini lucu sekali&amp;hashtags=kocak,69CUK" target="_blank">
+              <img src="/images/twitter.png" alt="Twitter" />
+            </a>              
+            <!-- Google+ -->
+            <a href="https://plus.google.com/share?url=http://www.hi-fiez.cf" target="_blank">
+              <img src="/images/gplus.png" alt="Google" />
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.hi-fiez.cf" target="_blank">
+              <img src="/images/linkedin.png" alt="LinkedIn" />
+            </a>
+
+            <!-- Pinterest -->
+            <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+              <img src="/images/pinterest.png" alt="Pinterest" />
+            </a>          
+          </div>
         </div>
       </td>
     </tr>
@@ -68,7 +92,7 @@
           js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-        <div class="fb-comments" data-width="720" data-href="https://developers.facebook.com/docs/plugins/comments#{{ $artikel->id }}" data-numposts="4"></div>
+        <div class="fb-comments" data-width="720" data-href="https://developers.facebook.com/docs/plugins/comments#{{ $artikel->id }}" data-numartikels="4"></div>
       </div>
     </div>
   </div><br>

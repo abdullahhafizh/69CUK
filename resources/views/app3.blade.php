@@ -2,14 +2,21 @@
 <html lang="en">
 <head> 
   @yield('header')  
-  <style type="text/css"> 
+  <style type="text/css">
+    #share-buttons img {
+      width: 30px;      
+      border: 0;
+      box-shadow: 0;
+      display: inline;
+    }
   </style>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="">  
+  <meta property="fb:app_id" content="100006797383542"/>
   <meta property="fb:admins" content="100006797383542"/>
   <link rel="icon" href="../../favicon.ico">
   <link href="{{ asset('css/style.css') }}" rel="stylesheet"> 
@@ -51,5 +58,5 @@
         </div>
       </div>
     </body>    
-      <script src="{{ asset('js/script.js') }}"></script>  
-      </html>
+    <script src="{{ asset('js/script.js') }}"></script>  
+    </html>

@@ -35,7 +35,7 @@ class HomeController extends Controller
 
     public function search(Request $request){
       $query = $request->get('q');
-      $hasil = \App\Artikel::where('judul', 'LIKE', '%' . $query . '%')->paginate(10);
+      $hasil = \App\Artikel::where('judul', 'LIKE', '%' . $query . '%')->orderBy('created_at', 'desc')->paginate(6);
       // dd($query);
       return view('result', compact('hasil', 'search'));
       return view('home', compact('hasil', 'search'));

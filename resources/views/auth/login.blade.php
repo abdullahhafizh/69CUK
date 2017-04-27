@@ -112,8 +112,7 @@
                                 <div class="input-group">
                                     <input id="pwd0" type="password" class="form-control" name="password" required>
                                     <span class="input-group-btn">
-
-                                        <a style="cursor: pointer; color: white;" class="btn btn-success" onclick="toggle_password('pwd0');" id="showhide">Show</a></span>
+                                        <a style="cursor: pointer; color: white;" class="btn btn-info" onclick="toggle_password('pwd0');" id="showhide"><i class="fa fa-eye" aria-hidden="true"></i></a></span>
                                     </div>      
 
                                     @if ($errors->has('password'))
@@ -169,13 +168,13 @@
     var tag = d.getElementById(target);
     var tag2 = d.getElementById("showhide");
 
-    if (tag2.innerHTML == 'Show'){
+    if (tag2.innerHTML == '<i class="fa fa-eye" aria-hidden="true"></i>'){
         tag.setAttribute('type', 'text');   
-        tag2.innerHTML = 'Hide';
+        tag2.innerHTML = '<i class="fa fa-eye-slash" aria-hidden="true"></i>';
 
     } else {
         tag.setAttribute('type', 'password');   
-        tag2.innerHTML = 'Show';
+        tag2.innerHTML = '<i class="fa fa-eye" aria-hidden="true"></i>';
     }
 }
 </script>

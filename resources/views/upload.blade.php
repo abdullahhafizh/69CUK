@@ -48,7 +48,7 @@
 <footer class="navbar-fixed-bottom">
   <div class="container-fluid">
     <small class="blur">
-      <span class="text-muted pull-left" style="cursor: default;">Created by <a href="https://github.com/Hi-Fiez" target="_blank">Hi-Fiez</a>
+      <span class="text-muted pull-left" style="cursor: default;">Created by <a href="https://github.com/Hi-Fiez" target="_blank">Hi-Fiez</a></span>
       <span class="text-muted pull-right">Designed by <a href="https://facebook.com/abdlahafizh">Abdullah Hafizh</a></span>    </small>
     </div>
   </footer>
