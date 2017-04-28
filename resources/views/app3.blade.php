@@ -16,7 +16,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">  
-  <meta property="fb:app_id" content="100006797383542"/>
+  <meta property="fb:app_id" content="811275922366061"/>
   <meta property="fb:admins" content="100006797383542"/>
   <link rel="icon" href="../../favicon.ico">
   <link href="{{ asset('css/style.css') }}" rel="stylesheet"> 
@@ -35,22 +35,36 @@
         <div class="container">
           <div class="row">                               
             <div class="col-sm-7 col-md-8" style="border-right: groove;">
+            <div style="height: 14px;"></div>
               @yield('content')
+              <div style="border-bottom:1px solid #aaa; padding-bottom: 10px;">
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%" align="left" style="padding-top: 10px; padding-bottom: 10px;">
+                        <center>              
+                        </center>
+                      </td>
+                      <td width="50%" align="right" style="padding-top: 10px; padding-bottom: 10px;"  >
+                        <center>              
+                        </center>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>        
             <div class="col-sm-5 col-md-4"> 
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
-                <center>              
-                  <a href="/password" target="blank"><img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png"></a>
+                <center>
                 </center>
               </div>
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
                 <center>              
-                  <a href="/password" target="blank"><img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png"></a>
                 </center>
               </div>
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
-                <center>              
-                  <a href="/password" target="blank"><img style="width:300px; height:250px; cursor: pointer;" src="../images/iklan.png"></a>
+                <center>                
                 </center>
               </div>              
             </div>  

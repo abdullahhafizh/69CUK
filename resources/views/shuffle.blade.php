@@ -3,6 +3,18 @@
 <title>
   {{ $post->judul }} - 69CUK For Adult Only
 </title>
+<style type="text/css">  
+  .blur{
+    color: #aaa;}    
+    table {
+      table-layout: fixed;
+      white-space: normal!important;
+    }
+
+    td {
+      word-wrap: break-word;
+    }      
+  </style>
 @endsection
 @section('content')
 <div style="border-bottom:1px solid #eee;padding-bottom:10px;padding-top:10px">
@@ -17,6 +29,9 @@
           <div class="blur">
            <a href="" style="display: inline; background: none; color:#aaa;"><b>{{$post->user->name}}</b></a>
            <abbr title="{{date('r',strtotime($post->created_at))}}">{{ $post->created_at->diffForHumans() }}</abbr>
+         </div>
+         <div class="blur">
+           <small>from&nbsp;&nbsp;{{$post->isi}}</small>
          </div>
          <div style="margin-top:5px;" class="blur">
            <div id="fb-root"></div>

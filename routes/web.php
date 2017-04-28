@@ -12,6 +12,13 @@ Route::get('list','UploadController@list');
 Route::get('/of-{id}', 'UserPageController@show');
 Route::get('user', 'UserPageController@index');
 
+Route::get('privacy', function () {
+	return view('about/privacy');
+});
+Route::get('terms', function () {
+	return view('about/terms');
+});
+
 Route::post('/search', 'HomeController@search');
 
 Route::post('upload/save','UploadController@save');

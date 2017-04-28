@@ -30,8 +30,8 @@
     <div class="form-group">
       <label class="control-label col-sm-1" for="isi" style="font-family: FontAwesome;">Sumber</label>
       <div class="col-sm-10">
-      <input id="isi" type="text" class="form-control" name="isi" style="width: 100%; font-family: FontAwesome;" required>
-      <label for="judul" style="font-family: FontAwesome;"><font color="#aaa"><span>(Recomended)<small> Hormati dan Hargai Pemilik Aslinya</small></span></font></label>
+        <input id="isi" type="text" class="form-control" name="isi" style="width: 100%; font-family: FontAwesome;" required>
+        <label for="judul" style="font-family: FontAwesome;"><font color="#aaa"><span>(Recomended)<small> Hormati dan Hargai Pemilik Aslinya</small></span></font></label>
       </div>        
     </div>
 
@@ -44,7 +44,8 @@
 
   </form>
   <div class="col-sm-2"></div>
-</div>        
+</div>     
+@endsection   
 <footer class="navbar-fixed-bottom">
   <div class="container-fluid">
     <small class="blur">
@@ -52,4 +53,3 @@
       <span class="text-muted pull-right">Designed by <a href="https://facebook.com/abdlahafizh">Abdullah Hafizh</a></span>    </small>
     </div>
   </footer>
-@endsection

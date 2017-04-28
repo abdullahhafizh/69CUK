@@ -141,29 +141,29 @@
                         </form>
                     </div>
                     <div class="card-footer"><center><small>
-                    By signing up, you agree to the <font class="underline" color="#1b95e0">Terms of Service</font> and <font class="underline" color="#1b95e0">Privacy Policy</font>,<br><font class="underline" color="#1b95e0">including Cookie</font> Use.</small>
+                    By signing up, you agree to the <a href="/terms"><font class="underline" color="#1b95e0">Terms of Service</font></a> and <a href="/privacy"><font class="underline" color="#1b95e0">Privacy Policy</font></a>,<br><a href="/privacy#cookie"><font class="underline" color="#1b95e0">including Cookie</font></a> Use.</small>
                     </center>
-                    </div>
                 </div>
-            </div>        
+            </div>
+        </div>        
 
-        </div>
     </div>
+</div>
 </div>
 <script type="text/javascript">
     function showDiv() {
-       document.getElementById('welcomeDiv').style.display = "block";
-       document.getElementById('register').style.display = "none";
-       document.getElementById('login').className = "btn btn-info disabled";
-       document.getElementById('loginbtn').style.display = "block";
-   }
-   function hideDiv() {
-     document.getElementById('welcomeDiv').style.display = "none";
-     document.getElementById('register').style.display = "block";
-     document.getElementById('login').className = "btn btn-info";
-     document.getElementById('loginbtn').style.display = "none";
+     document.getElementById('welcomeDiv').style.display = "block";
+     document.getElementById('register').style.display = "none";
+     document.getElementById('login').className = "btn btn-info disabled";
+     document.getElementById('loginbtn').style.display = "block";
  }
- function toggle_password(target){
+ function hideDiv() {
+   document.getElementById('welcomeDiv').style.display = "none";
+   document.getElementById('register').style.display = "block";
+   document.getElementById('login').className = "btn btn-info";
+   document.getElementById('loginbtn').style.display = "none";
+}
+function toggle_password(target){
     var d = document;
     var tag = d.getElementById(target);
     var tag2 = d.getElementById("showhide");

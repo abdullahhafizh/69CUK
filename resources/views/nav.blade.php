@@ -1,6 +1,6 @@
 <style type="text/css">
   body {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 </style>
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -78,10 +78,10 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
     <div class="nav navbar-nav navbar-right">
       <form method="post" action="{{ url('search' )}}" class="navbar-form navbar-left">
         <div class="input-group" style=" width: 100%;">
-          <input type="text" name="q" class="form-control" placeholder="Search for..." style="width: 180px;">
+          <input id="search" type="text" name="q" class="form-control" placeholder="Search for..." style="width: 180px;">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            <button id="searchbtn" class="btn btn-default" type="button" onclick="click()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
           </span>
         </div><!-- /input-group -->
       </form>
@@ -96,3 +96,8 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
     </div>
   </nav>
   @endif
+  <script type="text/javascript">    
+  function click() {
+     document.getElementById('search').
+ }
+  </script>

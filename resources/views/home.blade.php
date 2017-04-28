@@ -36,7 +36,7 @@
                 <abbr title="{{date('r',strtotime($data->created_at))}}"><small>{{ $data->created_at->diffForHumans() }}</small></abbr>
               </div>
               <div class="blur">
-                <small>from {{ $data->isi }}</small>
+                <small>from&nbsp;&nbsp;{{ $data->isi }}</small>
               </div>
               <div style="margin-top: 5px;">
                 <!-- <button class="btn btn-success btn-sm"><i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;Kocak</button>
@@ -46,7 +46,7 @@
                 <b><a style="color: white;" href="{{url('/kocak-'.$data->id)}}#komentar"><button class="navbar-inverse btn-sm"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;Komentar</button></a></b>
               </div>                        
               <div style="margin-top: 5px;" class="blur">
-                <small><b><span class="fb-comments-count" data-href="https://developers.facebook.com/docs/plugins/comments#{{ $data->id }}">0</span> <span>komentar</span></b></small><p></p>
+                <small><b><a style="display: inline; color: #aaa;" href="{{url('/kocak-'.$data->id)}}#komentar"><span class="fb-comments-count" data-href="https://developers.facebook.com/docs/plugins/comments#{{ $data->id }}">0</span> <span>komentar</span></a></b></small><p></p>
               </div>                                   
               <div style="margin-top: 5px;" id="share-buttons">                
                 <!-- Facebook -->

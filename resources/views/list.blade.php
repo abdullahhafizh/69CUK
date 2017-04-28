@@ -35,7 +35,7 @@
             <abbr title="{{date('r',strtotime($data->created_at))}}"><small>{{ $data->created_at->diffForHumans() }}</small></abbr>
         </div>
         <div class="blur">
-            <small>from {{ $data->isi }}</small>
+            <small>from&nbsp;&nbsp;{{ $data->isi }}</small>
         </div>
         <div style="margin-top: 5px;">
                 <!-- <button class="btn btn-success btn-sm"><i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp;Kocak</button>

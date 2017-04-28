@@ -36,8 +36,10 @@
             <h3 style="width: 700px;">{{ $artikel->judul }}</h3>
             <div class="blur">
              <a href="" style="display: inline; background: none; color:#aaa;"><b>{{$artikel->user->name}}</b></a>
-             <abbr title="{{date('r',strtotime($artikel->created_at))}}">{{ $artikel->created_at->diffForHumans() }}</abbr>             
-             <abbr>{{$artikel->user->email}}</abbr>
+             <abbr title="{{date('r',strtotime($artikel->created_at))}}">{{ $artikel->created_at->diffForHumans() }}</abbr>                          
+           </div>
+           <div class="blur">
+             <small>from&nbsp;&nbsp;{{$artikel->isi}}</small>
            </div>
            <div style="margin-top:5px;" class="blur">
              <div id="fb-root"></div>
@@ -49,31 +51,34 @@
               fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/#{{$artikel->id}}" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
-          </div>
-          <div class="pull-right" style="margin-top: 5px;" id="share-buttons">        
-            <!-- Facebook -->
-            <a href="http://www.facebook.com/sharer.php?u=http://www.hi-fiez.cf" target="_blank facebook">
-              <img src="/images/facebook.png" alt="Facebook" />
-            </a>
-            <!-- Twitter -->
-            <a href="https://twitter.com/share?url={{url('/kocak-'.$artikel->id)}}&amp;text=Coba lihat!!, ini lucu sekali&amp;hashtags=kocak,69CUK" target="_blank">
-              <img src="/images/twitter.png" alt="Twitter" />
-            </a>              
-            <!-- Google+ -->
-            <a href="https://plus.google.com/share?url=http://www.hi-fiez.cf" target="_blank">
-              <img src="/images/gplus.png" alt="Google" />
-            </a>
+          </div>          
+          <div class="pull-right" style="margin-top: 5px;" id="share-buttons">          
+            <div><h4 class="pull-left">Bagikan&nbsp;</h4></div>
+            <div class="pull-right">            
+              <!-- Facebook -->
+              <a href="http://www.facebook.com/sharer.php?u=http://www.hi-fiez.cf" target="_blank facebook">
+                <img src="/images/facebook.png" alt="Facebook" />
+              </a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/share?url={{url('/kocak-'.$artikel->id)}}&amp;text=Coba lihat!!, ini lucu sekali&amp;hashtags=kocak,69CUK" target="_blank">
+                <img src="/images/twitter.png" alt="Twitter" />
+              </a>              
+              <!-- Google+ -->
+              <a href="https://plus.google.com/share?url=http://www.hi-fiez.cf" target="_blank">
+                <img src="/images/gplus.png" alt="Google" />
+              </a>
 
-            <!-- LinkedIn -->
-            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.hi-fiez.cf" target="_blank">
-              <img src="/images/linkedin.png" alt="LinkedIn" />
-            </a>
+              <!-- LinkedIn -->
+              <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.hi-fiez.cf" target="_blank">
+                <img src="/images/linkedin.png" alt="LinkedIn" />
+              </a>
 
-            <!-- Pinterest -->
-            <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-              <img src="/images/pinterest.png" alt="Pinterest" />
-            </a>          
-          </div>
+              <!-- Pinterest -->
+              <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+                <img src="/images/pinterest.png" alt="Pinterest" />
+              </a>              
+            </div>          
+          </div>          
         </div>
       </td>
     </tr>
