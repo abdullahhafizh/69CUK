@@ -24,9 +24,12 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
       <li class="{{ Request::segment(1) === 'legendary' ? 'active' : null }}">
         <a href="{{ url('legendary' )}}" ></i>Legendary</a>
       </li>
+      @if(sizeof($artikel) == 0)
+      @else
       <li class="{{ Request::segment(1) === 'shuffle' ? 'active' : null }}">
         <a href="{{ url('shuffle' )}}" ></i>Shuffle</a>
       </li>
+      @endif
     </ul>
     <form method="post" action="{{ url('search' )}}" class="navbar-form navbar-left">
       <div class="input-group">
@@ -71,9 +74,12 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
       <li class="{{ Request::segment(1) === 'legendary' ? 'active' : null }}">
         <a href="{{ url('legendary' )}}" ></i>Legendary</a>
       </li>
+      @if(sizeof($artikel) == 0)
+      @else
       <li class="{{ Request::segment(1) === 'shuffle' ? 'active' : null }}">
-        <a href="{{ url('shuffle' )}}"></i>Shuffle</a>
+        <a href="{{ url('shuffle' )}}" ></i>Shuffle</a>
       </li>
+      @endif
     </ul>
     <div class="nav navbar-nav navbar-right">
       <form method="post" action="{{ url('search' )}}" class="navbar-form navbar-left">
