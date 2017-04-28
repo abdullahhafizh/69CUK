@@ -22,7 +22,7 @@ class UploadController extends Controller
 
   public function list()
   {
-    $data['artikel'] = \App\Artikel::where('user',Auth::user()->name)->orderBy('created_at', 'desc')->get();
+    $data['artikel'] = \App\Artikel::where('user_id',Auth::user()->id)->orderBy('created_at', 'desc')->get();
     return view('list')->with($data);
   }
 
@@ -33,7 +33,7 @@ class UploadController extends Controller
     // $a->slug = str_slug(Input::get('id'));
     $a->judul = Input::get('judul');
     $a->isi = Input::get('isi');
-    $a->user = Auth::user()->name;
+    $a->user_id = Auth::user()->id;
     $a->sampul = '';
     if(Input::hasFile('sampul')){
       $sampul = date('YmdHis').uniqid().".".

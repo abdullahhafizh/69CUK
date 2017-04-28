@@ -15,8 +15,8 @@
          <div style="text-align:left;padding-left:20px;padding-top:10px;font-family: FontAwesome;">
           <h3 style="width: 700px;">{{ $post->judul }}</h3>
           <div class="blur">
-           <a href="" style="display: inline; background: none; color:#aaa;"><b>{{ $post->user }}</b></a>
-           <abbr>{{ $post->created_at->diffForHumans() }}</abbr>
+           <a href="" style="display: inline; background: none; color:#aaa;"><b>{{$post->user->name}}</b></a>
+           <abbr title="{{date('r',strtotime($post->created_at))}}">{{ $post->created_at->diffForHumans() }}</abbr>
          </div>
          <div style="margin-top:5px;" class="blur">
            <div id="fb-root"></div>

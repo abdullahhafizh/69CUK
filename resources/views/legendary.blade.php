@@ -35,8 +35,9 @@
            <div style="text-align:left;padding-left:20px;padding-top:10px;font-family: FontAwesome;">
             <h3 style="width: 700px;">{{ $artikel->judul }}</h3>
             <div class="blur">
-             <a href="" style="display: inline; background: none; color:#aaa;"><b>{{ $artikel->user }}</b></a>
-             <abbr>{{ $artikel->created_at->diffForHumans() }}</abbr>
+             <a href="" style="display: inline; background: none; color:#aaa;"><b>{{$artikel->user->name}}</b></a>
+             <abbr title="{{date('r',strtotime($artikel->created_at))}}">{{ $artikel->created_at->diffForHumans() }}</abbr>             
+             <abbr>{{$artikel->user->email}}</abbr>
            </div>
            <div style="margin-top:5px;" class="blur">
              <div id="fb-root"></div>

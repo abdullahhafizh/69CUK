@@ -15,12 +15,14 @@ class CreateArtikelsTable extends Migration
     {
         Schema::create('artikels', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('user');
+            $table->integer('user_id')->unsigned();
             $table->string('judul');
             // $table->string('slug');
             $table->string('sampul');
             $table->text('isi');
             $table->timestamps();
+            $table->foreign('user_id')->references('id')
+            ->on('users')->onDelete('cascade');
         });
         $statement = "ALTER TABLE artikels AUTO_INCREMENT = 2000000001;";
         DB::unprepared($statement);
