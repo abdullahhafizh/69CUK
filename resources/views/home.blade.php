@@ -33,7 +33,7 @@
               <b><a href="{{url('/kocak-'.$data->id)}}" style="color: black; font-family: FontAwesome;"><h3>{{ $data->judul }}</h3></a></b>
               <div class="blur">
                 <a style="display: inline; color: #aaa;" href=""><b>{{ $data->user }}</b></a>
-                <abbr><small>{{ $data->created_at->diffForHumans() }}</small></abbr>
+                <abbr title=""><small>{{ $data->created_at->diffForHumans() }}</small></abbr>
               </div>
               <div class="blur">
                 <small>from {{ $data->isi }}</small>

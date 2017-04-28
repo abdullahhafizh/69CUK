@@ -22,7 +22,11 @@ class HomeController extends Controller
       return view('home')->with($data);        
     }
     public function getRandomPost() {
-      $post = Artikel::inRandomOrder()->first();
+      if ($post=\App\Artikel::get()->isEmpty())
+      {
+        return redirect (url('/'));
+      }
+      $post = Artikel::inRandomOrder()->first();      
       return redirect()->route('random', ["id" => $post->id]);
     }
 
