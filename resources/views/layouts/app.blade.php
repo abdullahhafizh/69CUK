@@ -22,22 +22,7 @@
         </script>
     </head>
     <body background="https://newevolutiondesigns.com/images/freebies/city-wallpaper-11.jpg">
-        <div id="app">                
-            <ol class="breadcrumb" style="background-color: rgba(91, 192, 222, 0.5);">        
-                <li class="float-left"><a href="/"><button type="button" class="btn btn-default navbar-btn">Back to Home</button></a></li>
-                <li class="float-right">            
-                    <a id="loginbtn" style="display: none;"><button type="button" class="btn btn-success navbar-btn" onclick="hideDiv()">Login</button></a>
-                    <a id="register"><button type="button" class="btn btn-primary navbar-btn" onclick="showDiv()">Register</button></a></li>
-                </ol>
-                @if (Auth::guest())                                        
-                <!-- Right Side Of Navbar -->
-                
-                <!-- Authentication Links -->                        
-                
-                @else                
-            </div>    
-            @endif        
-            <p><br></p>
+        <div id="app">        
             @yield('content')      
             <!-- Scripts -->
             <script src="{{ asset('js/app.js') }}"></script>    

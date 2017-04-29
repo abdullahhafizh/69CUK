@@ -9,6 +9,10 @@
       box-shadow: 0;
       display: inline;
     }
+    #main {                
+      bottom: 0;
+      overflow: auto;
+    }
   </style>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,12 +34,14 @@
       <![endif]-->  
     </head>
     <body>
-      @include('akin.nav')
+      <div id="nav">
+        @include('akin.nav')
+      </div>            
       <div class="main">
         <div class="container">
           <div class="row">                               
             <div class="col-sm-7 col-md-8" style="border-right: groove;">
-            <div style="height: 14px;"></div>
+              <div style="height: 14px;"></div>
               @yield('content')
               <div style="border-bottom:1px solid #aaa; padding-bottom: 10px;">
                 <table width="100%" border="0">
@@ -43,10 +49,12 @@
                     <tr>
                       <td width="50%" align="left" style="padding-top: 10px; padding-bottom: 10px;">
                         <center>              
+                          @include('akin.ad')
                         </center>
                       </td>
                       <td width="50%" align="right" style="padding-top: 10px; padding-bottom: 10px;"  >
-                        <center>              
+                        <center> 
+                          @include('akin.ad')             
                         </center>
                       </td>
                     </tr>
@@ -57,14 +65,17 @@
             <div class="col-sm-5 col-md-4"> 
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
                 <center>
+                  @include('akin.ad')
                 </center>
               </div>
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
-                <center>              
+                <center>             
+                  @include('akin.ad') 
                 </center>
               </div>
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">    
-                <center>                
+                <center>             
+                  @include('akin.ad')   
                 </center>
               </div>              
             </div>  

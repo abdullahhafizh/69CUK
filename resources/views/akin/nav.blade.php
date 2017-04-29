@@ -98,8 +98,3 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif; height: 1px;"
     </div>
   </nav>
   @endif
-  <script type="text/javascript">    
-    function click() {
-     document.getElementById('search').
-   }
- </script>

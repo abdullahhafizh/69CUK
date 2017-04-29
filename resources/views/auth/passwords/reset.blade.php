@@ -1,6 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
+<style type="text/css">
+    .underline:hover{
+        text-decoration: underline;      
+        cursor: pointer; 
+    }
+    small:hover{
+        cursor: default;
+    }
+</style>
+<ol class="breadcrumb" style="background-color: rgba(91, 192, 222, 0.5);">        
+    <li class="float-left">
+        <a href="/"><button type="button" class="btn btn-default navbar-btn">Back to Home</button></a>
+    </li>
+    <li class="float-right">            
+        <a href="/register">
+            <button type="button" class="btn btn-primary navbar-btn">Register</button>
+        </a>
+    </li>
+</ol>
+<br>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
