@@ -21,6 +21,7 @@ class HomeController extends Controller
         // $data['user'] = \App\User::find(Auth::user()->id);
       return view('home')->with($data);        
     }
+
     public function getRandomPost() {          
       if ($data=\App\Artikel::get()->isEmpty())
       {
@@ -40,6 +41,15 @@ class HomeController extends Controller
       $artikel = \App\Artikel::where('judul', 'LIKE', '%' . $query . '%')->orderBy('created_at', 'desc')->paginate(6);
       // dd($query);      
       return view('home', compact('artikel', 'search'));
+    }
+
+    public function legend(){
+      if ($data=\App\Artikel::get()->isEmpty())
+      {
+        return redirect (url('/'));
+      }
+      $data['artikel'] = \App\Artikel::first();
+      return view('post')->with($data);        
     }
 
   }

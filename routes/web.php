@@ -1,7 +1,8 @@
 <?php
 
-Route::get('shuffle', 'HomeController@getRandomPost');
 Route::get('kocak-{id}', 'HomeController@detail')->name('detail');
+Route::get('shuffle', 'HomeController@getRandomPost');
+Route::get('legendary', 'HomeController@legend');
 Route::get('home', 'HomeController@home');
 Route::get('/','HomeController@index');
 
@@ -21,10 +22,6 @@ Route::get('terms', function () {
 Route::post('/search', 'HomeController@search');
 
 Route::post('upload/save','UploadController@save');
-
-// Route::get('legendary', function () {
-//     return view('legendary');
-// });
 
 Route::get('/images/{filename}', function ($filename)
 {
