@@ -8,7 +8,7 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top" style="-webkit-box-shadow: 0 8px 6px -6px #999;
 -moz-box-shadow: 0 8px 6px -6px #999;
-box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
+box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif; height: 1px;">
 <div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,7 +33,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
         <input type="text" name="q" class="form-control" placeholder="Search for..." style="width: 232px;">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <span class="input-group-btn">
-          <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+          <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
         </span>        
       </div><!-- /input-group -->
     </form>
@@ -44,7 +44,9 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
           <li role="presentation" style="background: #444;">
             <a href="/list"><span class="glyphicon glyphicon-user"></span> {{{ Auth::user()->name }}}</a>
           </li>
-          <li role="presentation"><a href="/logout">Sign Out&nbsp;&nbsp;<span></span><span id="logokeluar" class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+          <li role="presentation">
+            <a href="/logout" title="Sign Out"><button type="button" class="btn btn-sm alert-danger" aria-expanded="false" aria-controls="navbar"><span id="logokeluar" class="glyphicon glyphicon-log-out pull-right"></span></button></a>
+          </li>
         </div>
       </div>
     </div>
@@ -81,7 +83,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
           <input id="search" type="text" name="q" class="form-control" placeholder="Search for..." style="width: 180px;">
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
           <span class="input-group-btn">
-            <button id="searchbtn" class="btn btn-default" type="button" onclick="click()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            <button id="searchbtn" class="btn btn-default" type="submit" onclick="click()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
           </span>
         </div><!-- /input-group -->
       </form>
@@ -97,7 +99,7 @@ box-shadow: 0 8px 6px -6px #999;font-family:'Merriweather', serif;">
   </nav>
   @endif
   <script type="text/javascript">    
-  function click() {
+    function click() {
      document.getElementById('search').
- }
-  </script>
+   }
+ </script>
