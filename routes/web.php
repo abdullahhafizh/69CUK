@@ -1,8 +1,7 @@
 <?php
 
-Route::get('shuffle/kocak-{id}', 'HomeController@show')->name('random');
 Route::get('shuffle', 'HomeController@getRandomPost');
-Route::get('kocak-{id}', 'HomeController@detail');
+Route::get('kocak-{id}', 'HomeController@detail')->name('detail');
 Route::get('home', 'HomeController@home');
 Route::get('/','HomeController@index');
 

@@ -21,18 +21,13 @@ class HomeController extends Controller
         // $data['user'] = \App\User::find(Auth::user()->id);
       return view('home')->with($data);        
     }
-    public function getRandomPost() {
-      if ($post=\App\Artikel::get()->isEmpty())
+    public function getRandomPost() {          
+      if ($data=\App\Artikel::get()->isEmpty())
       {
         return redirect (url('/'));
       }
-      $post = Artikel::inRandomOrder()->first();      
-      return redirect()->route('random', ["id" => $post->id]);
-    }
-
-    public function show($id) {
-      $post = Artikel::findOrFail($id);
-      return view('shuffle', compact('post'));
+      $data = Artikel::inRandomOrder()->first();      
+      return redirect()->route('detail', ["id" => $data->id]);
     }
 
     public function detail($id){
