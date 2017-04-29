@@ -32,7 +32,7 @@
             <td valign="top" style="display: block; width: 245px; font-family: FontAwesome;">
               <b><a href="{{url('/kocak-'.$data->id)}}" style="color: black; font-family: FontAwesome;"><h3>{{ $data->judul }}</h3></a></b>
               <div class="blur">
-                <a style="display: inline; color: #aaa;" href=""><b>{{$data->user->name}}</b></a>
+                <a style="display: inline; color: #aaa;" href="/of-{{$data->user->id}}"><b>{{$data->user->name}}</b></a>
                 <abbr title="{{date('r',strtotime($data->created_at))}}"><small>{{ $data->created_at->diffForHumans() }}</small></abbr>
               </div>
               <div class="blur">

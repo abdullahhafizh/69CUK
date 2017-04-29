@@ -13,17 +13,16 @@ class UserPageController extends Controller
     	return view('user');
     }
 
-    public function show($id)
+    public function list()
     {
-        // $data['users'] = \App\User::find($id);
-        // if (!$data['users']){ abort(404); }    
-        // return view('user')->with($data);
-    	return view('user', ['blog' => $id]);
+        $data = Auth::user();
+        return redirect()->route('of', ["id" => $data->id]);
     }
 
-    public function viewProfile($id = null) {
-    // $data['users'] = \App\User::find($id);
-    // if (!$data['users']){ abort(404); }    
-    // return view('user')->with($data);
-    }
+    public function of($id)
+    {    
+        $data['artikel'] = \App\Artikel::where('user_id', $id)->orderBy('created_at', 'desc')->get();
+        return view('home')->with($data);    
+  }
+
 }

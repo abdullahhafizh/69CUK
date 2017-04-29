@@ -6,9 +6,9 @@ Route::get('home', 'HomeController@home');
 Route::get('/','HomeController@index');
 
 Route::get('upload', 'UploadController@index');
-Route::get('list','UploadController@list');
 
-Route::get('/of-{id}', 'UserPageController@show');
+Route::get('of-{id}', 'UserPageController@of')->name('of');
+Route::get('list','UserPageController@list');
 Route::get('user', 'UserPageController@index');
 
 Route::get('privacy', function () {
@@ -42,8 +42,8 @@ Route::get('logout', 'Auth\LoginController@logout');
 Route::get('/entry',function () {
     return view('auth/login');
 });
-Route::get('password',function () {
-	return view('password');
+Route::get('pass',function () {
+	return view('akin.password');
 });
 Auth::routes();
 

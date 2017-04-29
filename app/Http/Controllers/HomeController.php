@@ -32,7 +32,7 @@ class HomeController extends Controller
 
     public function detail($id){
       $data['artikel'] = \App\Artikel::find($id);
-      return view('legendary')->with($data);
+      return view('post')->with($data);
     }
 
     public function search(Request $request){

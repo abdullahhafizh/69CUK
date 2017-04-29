@@ -30,7 +30,7 @@
       <![endif]-->  
     </head>
     <body>
-      @include('nav')
+      @include('akin.nav')
       <div class="main">
         <div class="container">
           <div class="row">                               
