@@ -57,25 +57,25 @@
             <div class="pull-right">            
               <!-- Facebook -->
               <a href="http://www.facebook.com/sharer.php?u=http://www.hi-fiez.cf" target="_blank facebook">
-                <img src="/images/facebook.png" alt="Facebook" />
+                <img src="img/facebook.png" alt="Facebook" />
               </a>
               <!-- Twitter -->
               <a href="https://twitter.com/share?url={{url('/kocak-'.$artikel->id)}}&amp;text=Coba lihat!!, ini lucu sekali&amp;hashtags=kocak,69CUK" target="_blank">
-                <img src="/images/twitter.png" alt="Twitter" />
+                <img src="img/twitter.png" alt="Twitter" />
               </a>              
               <!-- Google+ -->
               <a href="https://plus.google.com/share?url=http://www.hi-fiez.cf" target="_blank">
-                <img src="/images/gplus.png" alt="Google" />
+                <img src="img/gplus.png" alt="Google" />
               </a>
 
               <!-- LinkedIn -->
               <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://www.hi-fiez.cf" target="_blank">
-                <img src="/images/linkedin.png" alt="LinkedIn" />
+                <img src="img/linkedin.png" alt="LinkedIn" />
               </a>
 
               <!-- Pinterest -->
               <a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-                <img src="/images/pinterest.png" alt="Pinterest" />
+                <img src="img/pinterest.png" alt="Pinterest" />
               </a>              
             </div>          
           </div>          

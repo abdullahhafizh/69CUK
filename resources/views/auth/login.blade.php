@@ -73,7 +73,7 @@
                                     Login
                                 </button>
                                 Don't have an account?
-                                    <a class="" href="{{ route('password.request') }}">
+                                    <a class="" href="{{ route('register') }}">
                                         <font color="#1da1f2">Sign up »</font>
                                     </a>
                             </div>

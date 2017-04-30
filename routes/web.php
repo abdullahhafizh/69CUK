@@ -6,6 +6,14 @@ Route::get('legendary', 'HomeController@legend');
 Route::get('home', 'HomeController@home');
 Route::get('/','HomeController@index');
 
+// Route::get('/page/{id}', 'HomeController@paginate');
+// Route::get('/?=page{id}');
+Route::get('/paginate/{id}', function ($id) {
+    $data['artikel'] = \App\Artikel::orderBy('created_at', 'desc')->paginate($id);
+        // $data['user'] = \App\User::find(Auth::user()->id);
+      return view('home')->with($data);
+});
+
 Route::get('upload', 'UploadController@index');
 
 Route::get('of-{id}', 'UserPageController@of')->name('of');
