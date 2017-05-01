@@ -18,13 +18,7 @@ class UploadController extends Controller
   public function index()
   {
     return view('upload');
-  }
-
-  public function list()
-  {
-    $data['artikel'] = \App\Artikel::where('user_id',Auth::user()->id)->orderBy('created_at', 'desc')->get();
-    return view('list')->with($data);
-  }
+  }  
 
   public function save()
   {

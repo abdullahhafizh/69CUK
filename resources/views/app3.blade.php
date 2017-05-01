@@ -73,12 +73,15 @@
                   </center>
                 </div>
                 <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:1px;">
-                  <div><a href="https://twitter.com/abdullahafizh" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                  <div><a href="https://twitter.com/abdullahafizh" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></div>                  
                   <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/106912665980794449409" data-rel="author"></div>                  
+                  <div>                    
+                    <a class="github-button" href="https://github.com/Hi-Fiez/69CUK" data-show-count="true" aria-label="Star Hi-Fiez/69CUK on GitHub">Star</a>
+                  </div>
                   <div><center><small>
                     <a href="/terms" class="blur">Terms</a> <a class="blur">-</a> <a href="/privacy" class="blur">Privacy</a></small>
                   </center>
-                </div>
+                </div>                                
               </div>                
               <div style="border-bottom:1px solid #ccc; padding-top:10px; padding-bottom:10px;">
                 <center>             
@@ -94,6 +97,8 @@
     <script src="https://apis.google.com/js/platform.js" async defer>
       {lang: 'id'}
     </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="{{ asset('js/script.js') }}"></script>  
   </body>        
   </html>
